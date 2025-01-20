@@ -20,7 +20,8 @@ int main() {
     char letra;
     int numero;
     char nome [20];
-    float popucao;
+    char Nome [20];
+    float populacao;
     float area;
     float pib;
     int pontos;
@@ -28,15 +29,33 @@ int main() {
     //Título
     printf("## Cadastro de cartas SuperTrunfo ##\n");
         
-        printf("Insira um numero para a nova carta.\n");
-        scanf("%d", &numero);
+    printf("Insira um numero para a nova carta:\n");
+    scanf("%d", &numero);
 
-        printf("Insira uma letra para a nova carta.\n");
-        scanf("%c", &letra);
-
-        printf("Codigo da cidade: %d", numero);
-        print("%c", letra);
+    printf("Insira uma letra para a nova carta:\n");
+    scanf(" %c", &letra);
+    printf("Codigo da cidade: %c%d\n", letra, numero);
     
+    printf("Insira o nome do país\n");
+    scanf(" %s", &nome);
+    printf("Nome cadastrado com sucesso!\n");       
+
+    printf("Insira o número de população desta cidade\n");
+    scanf("%f", &populacao);
+    printf("População cadastrada com sucesso!\n");
+
+    printf("Insira a extenção territorial deste país\n");
+    scanf("%f", &area);
+
+    printf("Insira o PIB da cidade\n");
+    scanf("%e", &pib);
+    printf("PIB cadastrado!\n");
+
+    printf("Insira a quantidade de pontos turísticos desta cidade\n");
+    scanf("%d", &pontos);
+
+    printf("País: %s", &nome);
+    printf("Cidade: %s", &Nome);
 
     return 0;
 }
