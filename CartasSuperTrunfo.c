@@ -29,10 +29,10 @@ int main() {
     //Título
     printf("## Cadastro de cartas SuperTrunfo ##\n");
         
-    printf("Insira um numero para a nova carta:\n");
+    printf("Insira um numero para a nova carta\n");
     scanf("%d", &numero);
 
-    printf("Insira uma letra para a nova carta:\n");
+    printf("Insira uma letra para a nova carta\n");
     scanf(" %c", &letra);
     printf("Codigo da cidade: %c%d\n", letra, numero);
     
